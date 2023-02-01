@@ -5,6 +5,7 @@
 .header {
   max-width: 1200px;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;
@@ -20,10 +21,12 @@
 }
 
 .header-menu a {
+  display: inline-block;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 32px;
+  padding: 12px 0;
   color: #ffffff;
   padding: 16px 0;
   position: relative;
