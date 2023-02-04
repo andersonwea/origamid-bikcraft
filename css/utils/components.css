@@ -1,16 +1,21 @@
+.container {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .btn {
-  font-family: 'Popins', sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.33;
-  font-weight: 600;
   text-transform: uppercase;
-  color: #332200;
+  color: var(--color-p5);
   padding: 16px 32px;
   background: linear-gradient(#FFBF00, #F2A50C);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   display: inline-block;
   transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
 }
 
 .btn:hover {
@@ -22,4 +27,26 @@
     font-size: 1rem;
     padding: 12px 16px;
   }
+}
+
+.link {
+  font: 500 1.5rem/1.5 'Poppins', sans-serif;
+  display: inline-block;
+  color: var(--color-p1);
+  position: relative;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.link::after {
+  content: "";
+  height: 4px;
+  background-color: currentColor;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.link:hover {
+  color: var(--color-0);
 }
