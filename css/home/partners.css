@@ -4,7 +4,7 @@
 }
 
 .partners h2 {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   display: block;
 }
 
@@ -40,7 +40,7 @@
 
 @media (max-width: 800px) {
   .partners {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
 
   .partners h2 {
@@ -49,6 +49,10 @@
 
   .partners ul {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .partners li {
+    padding: 20px;
   }
 
   .partners li:nth-child(n+7) {
