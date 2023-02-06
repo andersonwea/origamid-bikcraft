@@ -15,10 +15,11 @@
 @import "./utils/components.css";
 
 /* Bicicletas */
-@import "./bicicletas/bicicletas-lista.css";
+@import "./bicycles/bicycles-list.css";
+@import "./bicycles/bicycles.css";
 
 /* seguros  */
 @import "./insurance/insurance.css";
 
 /* termos */
-@import "./termos/termos.css";
+@import "./terms/terms.css";
