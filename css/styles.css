@@ -19,3 +19,6 @@
 
 /* seguros  */
 @import "./insurance/insurance.css";
+
+/* termos */
+@import "./termos/termos.css";
