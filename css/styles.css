@@ -14,4 +14,7 @@
 @import "./utils/components.css";
 
 /* Bicicletas */
-@import "./bicicletas/bicicletas-lista.css"
+@import "./bicicletas/bicicletas-lista.css";
+
+/* seguros  */
+@import "./insurance/insurance.css";
