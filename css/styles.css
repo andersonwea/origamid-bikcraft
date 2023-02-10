@@ -13,6 +13,7 @@
 
 /* utils */
 @import "./utils/components.css";
+@import "./utils/form.css";
 
 /* Bicicletas */
 @import "./bicycles/bicycles-list.css";
@@ -27,5 +28,9 @@
 @import "./insurance/benefits.css";
 @import "./insurance//questions.css";
 
-/* termos */
+/* contato */
 @import "./terms/terms.css";
+
+/* termos */
+@import "./contact/contact.css";
+@import "./contact/stores.css";
