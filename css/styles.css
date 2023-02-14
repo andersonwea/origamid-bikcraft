@@ -28,6 +28,9 @@
 @import "./insurance/benefits.css";
 @import "./insurance//questions.css";
 
+/* orçamento */
+@import "./budge/budge.css";
+
 /* contato */
 @import "./terms/terms.css";
 
