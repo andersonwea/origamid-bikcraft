@@ -63,3 +63,8 @@ const selectBicycles = (bicycle) => {
 }
 
 bicycles.forEach(selectBicycles)
+
+// Animação
+if (window.SimpleAnime) {
+  new SimpleAnime()
+}
