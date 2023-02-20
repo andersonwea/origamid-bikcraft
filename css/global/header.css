@@ -40,7 +40,8 @@
   transform-origin: left center;
 }
 
-.header-menu a:hover::before {
+.header-menu a:hover::before,
+.header-menu a.active::before {
   opacity: 1;
   transform: scaleX(1);
 }

@@ -16,14 +16,18 @@
   background-color: var(--color-1);
 }
 
-.questions dt {
+.questions button {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   cursor: pointer;
+  border: none;
+  width: 100%;
+  text-align: left;
+  background: none;
 }
 
-.questions dt::before {
+.questions button::before {
   content: "";
   background-color: var(--color-p1);
   display: inline-block;
@@ -36,8 +40,17 @@
   transition: transform 250ms;
 }
 
-.questions dt:hover img {
+.questions button:hover img,
+.questions button[aria-expanded="true"] img {
   transform: rotate(180deg);
+}
+
+.questions dd {
+  display: none;
+}
+
+.questions dd.active {
+  display: block;
 }
 
 .questions dd {
