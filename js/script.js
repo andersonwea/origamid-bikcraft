@@ -36,7 +36,6 @@ const AnswerActive = (event) => {
   answer.classList.toggle('active');
   const active = answer.classList.contains('active');
   question.setAttribute('aria-expanded', active)
-  console.log(active)
 }
 
 const selectQuestions = (question) => {
@@ -44,4 +43,23 @@ const selectQuestions = (question) => {
 }
 
 questions.forEach(selectQuestions);
-answers.forEach(selectAnswers);
+
+// bicycles galery
+const bicycles = document.querySelectorAll('.bicycles-images img');
+const bicyclesGalery = document.querySelector('.bicycles-images')
+
+const changeImage = (event) => {
+  const image = event.target
+  // matchMedia metodo para verificar o tamanho da tela
+  // propriedade matches retorna true ou false 
+  const media = matchMedia("(min-width: 1000px)").matches;
+  if (media) {
+    bicyclesGalery.prepend(image)
+  }
+}
+
+const selectBicycles = (bicycle) => {
+  bicycle.addEventListener('click', changeImage)
+}
+
+bicycles.forEach(selectBicycles)
